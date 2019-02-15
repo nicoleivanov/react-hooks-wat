@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 export default ({initialNumItems}) => {
     const [numItems, setNumItems] = useState(initialNumItems);
 
-    const incrementNumItems = ()=>{setNumItems(numItems + 1)
+    const incrementNumItems = ()=>{
+        setNumItems(numItems + 1)
     }
 
     const decrementNumItems = ()=>{
@@ -34,13 +35,6 @@ export default ({initialNumItems}) => {
 
 const NestedItem = ({itemNumber}) => {
     const [inputValue, setInputValue] = useState("");
-
-    // useEffect(()=>{
-    //     console.log("useEffect", itemNumber );
-    //     return ()=>{
-    //         console.log("Return useEffect", itemNumber );
-    //     }
-    // },[]);//notice the empty array to indicate to only perform useEffect at mount and unmount
 
     return (
         <li>

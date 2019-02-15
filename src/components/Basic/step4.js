@@ -5,6 +5,11 @@ export default () => {
     const [surname, setSurname] = useState('Poppins');
     const [location, setLocation] = useState('Cherry Tree Lane');
   
+    useEffect(() => {
+      // useEffect is for executing side effects, "lifecycle" methods
+      document.title = `${name} ${surname}`;
+    });
+    
     function handleNameChange(e) {
       setName(e.target.value);
     }

@@ -8,9 +8,8 @@ export default () => {
     const handleResize = () => setWidth(window.innerWidth);
   
     useEffect(() => {
+      // useEffect is for executing side effects, "lifecycle" methods
       document.title = `${name} ${surname}`;
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
     });
   
     function handleNameChange(e) {
