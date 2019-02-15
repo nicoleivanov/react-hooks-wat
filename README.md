@@ -1,6 +1,6 @@
-# React Hooks Demo
+# React Hooks...wat?
 
-Presentation and working demos of React hooks that just went live in React v16.8. Covers what hooks are and how they may affect your React codebases going forward (once you get around to upgrading).
+Presentation and working demos of React hooks that just went live in React v16.8. Covers what hooks are, some basic to intermediate examples of hooks and how they may affect your React codebases going forward (once you get around to upgrading).
 
 ## Examples
 
