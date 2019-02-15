@@ -29,8 +29,8 @@ theme: Next, 9
 ## What is a hook? 🎣 
 
  - They let you use state and other React features *without writing a class*
- - Functional components now have functional parity to class components
- - You "hook" React's state management
+ - Functional components now have feature parity to class components
+ - You "hook" into React's state management system
  - Opt-in gradually, no breaking changes
 
 --- 
