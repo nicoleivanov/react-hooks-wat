@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+// We should have some familiarity to state-management with hooks
+// What if we want to execute a side-effect?
 export default () => {
     const [name, setName] = useState('Mary');
     const [surname, setSurname] = useState('Poppins');

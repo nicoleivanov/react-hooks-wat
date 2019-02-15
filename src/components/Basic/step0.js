@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Consider this regular stateful class-based component
+// Lets turn this into a stateful functional component w/ hooks!
+
 class HookComponent extends React.Component{
     state = {
         name: "Marie",

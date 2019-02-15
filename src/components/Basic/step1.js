@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// Great! We have a stateful function-based component
+// Lets add surname
+
 export default () => {
   const [name, setName] = useState('Mary');
 

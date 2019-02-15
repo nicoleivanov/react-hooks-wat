@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
+// Ok that side effect was fine but let's see
+// what a more complex side effect would look like.
+// Also let's see how the second argument of useEffect works
+
 export default () => {
     const [name, setName] = useState('Mary');
     const [surname, setSurname] = useState('Poppins');

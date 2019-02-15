@@ -33,6 +33,17 @@ theme: Next, 9
  - You "hook" into React's state management system
  - Opt-in gradually, no breaking changes
 
+---
+
+## Rules 👮
+
+Two basic but vv important rules:
+
+ - ⚠️ Only call hooks at **top level of function** (no loops, conditions or nested fxns)
+ - ⚠️ Only call from React **function components** or custom hoooks (we'll get to that)
+
+^ Won't make a ton of sense right now but important for the demo
+
 --- 
 
 # Demo #1
@@ -62,7 +73,7 @@ Easier to show than to continue explaining
 
 ---
 
-## Rules 👮
+## Rules (again) 👮
 
 Two basic but vv important rules:
 

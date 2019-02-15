@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// Great! We're getting the hang of creating state with hooks
+// Lets experiment and see what happens when we violate one of the rules of hooks
+
 export default () => {
     const [name, setName] = useState('Mary');
     // if(name=== 'Harry'){

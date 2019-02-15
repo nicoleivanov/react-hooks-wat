@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-//custom hook! Notice the naming convention
+// We can abstract our form even further with a custom-hook!
+// Look at how much plumbing code we've removed!
+
 export const useFormInput = (initialValue)=>{
   const [value, setValue] = useState(initialValue);
   function onHandleChange(e) {
