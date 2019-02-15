@@ -2,6 +2,21 @@
 
 Presentation and working demos of React hooks that just went live in React v16.8. Covers what hooks are, some basic to intermediate examples of hooks and how they may affect your React codebases going forward (once you get around to upgrading).
 
+## Getting started
+
+### Code
+
+To get started with the code, execute the following commands:
+
+```shell
+yarn install
+yarn start
+```
+
+### Presentation
+
+This presentation is a markdown file that uses Deckset to run.
+
 ## Examples
 
 This repo includes working, step-by-step examples of the following. These examples can be found in the `/src/components/` directory.
@@ -13,4 +28,4 @@ This repo includes working, step-by-step examples of the following. These exampl
 
 
 ## Create React App
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Visit repo for more detailed instructions about building, ejecting etc.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Visit repo for more detailed instructions about building, ejecting etc.`
