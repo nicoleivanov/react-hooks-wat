@@ -1,9 +1,21 @@
 import React, { useState, useEffect } from 'react';
 
+// Two hypothetical components, StatusIndicatorWithPause and StatusIndicator.
+// Both separate components that share some state functionality, but not all functionality
 
-const StatusIndicator1 =  () => {
-  const [isActive, setIsActive] = useState(false);              
-  const [isTimerActive, setIsTimerActive] = useState(true);              
+const StatusIndicatorWithPause =  () => {
+  const [isActive, setIsActive] = useState(false);
+  const [isTimerActive, setIsTimerActive] = useState(true);      
+  
+  useEffect(() => {
+    if(!isTimerActive) return;
+    const timeout = setTimeout(()=>{
+      setIsActive(!isActive);
+    },1000);
+    return () => {
+      clearTimeout(timeout);
+    }
+  },[isTimerActive]);
   
   return (
     <>
@@ -22,7 +34,7 @@ const StatusIndicator1 =  () => {
   );
 }
 
-const StatusIndicator2 =  () => {
+const StatusIndicator =  () => {
   const [isActive, setIsActive] = useState(false);              
   
   useEffect(() => {
@@ -56,8 +68,8 @@ const StatusIndicator2 =  () => {
 export const StatusIndicators =  () => {
   return (
     <>
-      <StatusIndicator1/>
-      <StatusIndicator2/>
+      <StatusIndicatorWithPause/>
+      <StatusIndicator/>
     </>
   );
 }

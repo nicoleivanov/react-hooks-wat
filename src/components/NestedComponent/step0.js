@@ -1,10 +1,12 @@
 import React from 'react';
 
 export default class HookComponent extends React.Component{
-    state = {
-        numItems: 0,
+    
+    constructor(props) {
+        super(props);
+        this.state = { numItems: props.initialNumItems }; 
     }
-
+    
     incrementNumItems = ()=>{
         this.setState({
             numItems: this.state.numItems + 1

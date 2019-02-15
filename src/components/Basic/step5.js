@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
+//custom hook! Notice the naming convention
 export const useFormInput = (initialValue)=>{
-    const [value, setValue] = useState(initialValue);
-    function onHandleChange(e) {
-      setValue(e.target.value);
-    }
-    return { value, onChange: onHandleChange };
+  const [value, setValue] = useState(initialValue);
+  function onHandleChange(e) {
+    setValue(e.target.value);
+  }
+  return { value, onChange: onHandleChange };
 }
 
 export default () => {

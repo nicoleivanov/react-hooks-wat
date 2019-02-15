@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
-// Two hypothetical components, StatusIndicator1 and StatusIndicator2.
+// Two hypothetical components, StatusIndicatorWithPause and StatusIndicator.
 // Both separate components that share some state functionality, but not all functionality
 
 // This example shows how you can use custom hooks to share functionality across two completely different components
 
+
+// Custom Hook! Notice the naming convention!
 const useStatusTimer = (isTimerActive)=>{
-  const [isActive, setIsActive] = useState(false);              // State variable 1
+  const [isActive, setIsActive] = useState(false);
   
   useEffect(() => {
     console.log("Use effect!");
@@ -24,8 +26,8 @@ const useStatusTimer = (isTimerActive)=>{
 }
 
 
-const StatusIndicator1 =  () => {
-  const [isTimerActive, setIsTimerActive] = useState(true);              // State variable 1
+const StatusIndicatorWithPause =  () => {
+  const [isTimerActive, setIsTimerActive] = useState(true);
   const [ isActive, setIsActive ] = useStatusTimer(isTimerActive); 
 
   return (
@@ -45,8 +47,8 @@ const StatusIndicator1 =  () => {
   );
 }
 
-const StatusIndicator2 =  () => {
-  const [ isActive, setIsActive ] = useStatusTimer(true);              // State variable 
+const StatusIndicator =  () => {
+  const [ isActive, setIsActive ] = useStatusTimer(true);
 
   return (
     <>
@@ -68,8 +70,8 @@ const StatusIndicator2 =  () => {
 export const StatusIndicators =  () => {
   return (
     <>
-      <StatusIndicator1/>
-      <StatusIndicator2/>
+      <StatusIndicatorWithPause/>
+      <StatusIndicator/>
     </>
   );
 }
